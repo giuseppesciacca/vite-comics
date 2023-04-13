@@ -252,7 +252,12 @@ export default {
   }
 
   a {
-    color: black;
+    color: rgba(70, 70, 73, 1);
+    font-weight: 600;
+  }
+
+  li:hover a {
+    color: rgba(2, 130, 249, 1);
   }
 }
 
