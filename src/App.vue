@@ -218,10 +218,24 @@ export default {
     </div>
     <!-- /#footer_top -->
 
-    <div id="footer_bottom" class="text-white">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil laudantium ad perferendis
-      quisquam ratione, ipsa a nulla consequatur, magnam doloremque sit nesciunt voluptate architecto error excepturi
-      distinctio, maiores sapiente fugit.
+    <div id="footer_bottom" class="text-white px-3">
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex align-items-center">
+            <button class="my_btn btn">SIGN-UP NOW!</button>
+          </div>
+
+          <div class="col d-flex align-items-center justify-content-end">
+            <p class="pe-3 m-0 fw-bold">FOLLOW US</p>
+
+            <img class="pe-3" src="./assets/img/footer-facebook.png" alt="">
+            <img class="pe-3" src="./assets/img/footer-twitter.png" alt="">
+            <img class="pe-3" src="./assets/img/footer-youtube.png" alt="">
+            <img class="pe-3" src="./assets/img/footer-pinterest.png" alt="">
+            <img src="./assets/img/footer-periscope.png" alt="">
+          </div>
+        </div>
+      </div>
     </div>
     <!-- /#footer_bottom -->
   </footer>
@@ -285,6 +299,22 @@ main.debug {
   #footer_bottom {
     background-color: rgba(48, 48, 48, 1);
     height: 110px;
+
+    .col {
+      height: 110px;
+
+      .my_btn {
+        border: 2px solid rgba(2, 130, 249, 1);
+        border-radius: 0;
+        color: white;
+        padding: 0.5rem;
+      }
+
+      p {
+        color: rgba(2, 130, 249, 1);
+      }
+    }
+
   }
 }
 </style>
