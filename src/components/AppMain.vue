@@ -16,7 +16,7 @@ export default {
         </div>
 
         <BannerMain></BannerMain>
-        <!-- /.nav_main -->
+        <!-- /.banner_main -->
 
     </main>
 </template>

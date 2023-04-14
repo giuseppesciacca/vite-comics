@@ -134,13 +134,17 @@ export default {
                     </div>
 
                     <div class="col d-flex align-items-center justify-content-end">
-                        <p class="pe-3 m-0 fw-bold">FOLLOW US</p>
+                        <a class="pe-3 m-0 fw-bold text-decoration-none" href="">FOLLOW US</a>
 
-                        <img class="pe-3" src="../assets/img/footer-facebook.png" alt="">
-                        <img class="pe-3" src="../assets/img/footer-twitter.png" alt="">
-                        <img class="pe-3" src="../assets/img/footer-youtube.png" alt="">
-                        <img class="pe-3" src="../assets/img/footer-pinterest.png" alt="">
-                        <img src="../assets/img/footer-periscope.png" alt="">
+                        <a href="#"><img class="pe-3" src="../assets/img/footer-facebook.png" alt=""></a>
+
+                        <a href="#"><img class="pe-3" src="../assets/img/footer-twitter.png" alt=""></a>
+
+                        <a href="#"><img class="pe-3" src="../assets/img/footer-youtube.png" alt=""></a>
+
+                        <a href="#"><img class="pe-3" src="../assets/img/footer-pinterest.png" alt=""></a>
+
+                        <a href="#"><img src="../assets/img/footer-periscope.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -172,8 +176,11 @@ export default {
                 text-decoration: none;
                 color: grey;
             }
-        }
 
+            a:hover {
+                color: white;
+            }
+        }
     }
 
     #footer_bottom {
@@ -194,7 +201,6 @@ export default {
                 color: rgba(2, 130, 249, 1);
             }
         }
-
     }
 }
 </style>
