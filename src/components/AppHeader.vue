@@ -12,18 +12,18 @@ export default {
 </script>
 
 <template>
-    <header id="app_header" class="p-3">
+    <header id="app_header" class="">
         <div class="container">
             <div class="row">
 
-                <div class="logo col-5">
+                <div class="logo col-5 d-flex align-items-center">
                     <img class="img-fluid" src="../assets/img/dc-logo.png" alt="">
                 </div>
                 <!-- /header left -->
 
-                <nav class="navbar navbar-expand col-7">
-                    <ul class="nav navbar-nav">
-                        <li v-for="link in linkMenu" class="nav-item">
+                <nav class="navbar navbar-expand col-7 p-0">
+                    <ul class="nav navbar-nav ">
+                        <li v-for="link in linkMenu" class="nav-item d-flex align-items-center">
                             <a class="nav-link" :href="link.src">{{ link.text }}</a>
                         </li>
                     </ul>
@@ -43,13 +43,23 @@ export default {
         height: 80px;
     }
 
+    li {
+        height: 120px;
+    }
+
     a {
         color: rgba(70, 70, 73, 1);
         font-weight: 600;
     }
 
+    li:hover {
+        border-bottom: 5px solid rgba(2, 130, 249, 1);
+        cursor: pointer;
+    }
+
     li:hover a {
         color: rgba(2, 130, 249, 1);
+        margin-bottom: -5px;
     }
 }
 </style>

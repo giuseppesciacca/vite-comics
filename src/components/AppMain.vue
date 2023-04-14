@@ -21,11 +21,14 @@ export default {
     <main id="app_main" class="text-white">
 
         <div class="jumbotron mb-4"></div>
+        <!-- /.jumbotron -->
 
         <div class="container px-3 py-5 position-relative">
+
             <div id="current_series" class="position-absolute bg-primary p-3">
-                <h2 class="m-0">CURRENT SERIES</h2>
+                <h2 class="m-0 fw-bold">CURRENT SERIES</h2>
             </div>
+            <!-- /#current_series -->
 
             <div class="row">
 
