@@ -11,6 +11,8 @@ export default {
 <template>
     <main id="app_main" class=" debug">
 
+        <div class="jumbotron"></div>
+
         <div class="container px-3 py-5">
             <div>Content goes here</div>
         </div>
@@ -25,5 +27,12 @@ export default {
 main.debug {
     background-color: rgba(28, 28, 28, 1);
     color: white;
+}
+
+.jumbotron {
+    background-image: url(../assets/img/jumbotron.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 </style>
