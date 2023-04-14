@@ -36,6 +36,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/variables.scss' as *;
+
 #app_header {
     height: 120px;
 
@@ -48,17 +50,17 @@ export default {
     }
 
     a {
-        color: rgba(70, 70, 73, 1);
+        color: $darkLight;
         font-weight: 600;
     }
 
     li:hover {
-        border-bottom: 5px solid rgba(2, 130, 249, 1);
+        border-bottom: 5px solid $primary;
         cursor: pointer;
     }
 
     li:hover a {
-        color: rgba(2, 130, 249, 1);
+        color: $primary;
         margin-bottom: -5px;
     }
 }

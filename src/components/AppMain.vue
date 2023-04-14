@@ -51,8 +51,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/variables.scss' as *;
+
 main {
-    background-color: rgba(28, 28, 28, 1);
+    background-color: $dark;
 }
 
 #current_series {

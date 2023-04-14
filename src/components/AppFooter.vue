@@ -154,6 +154,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/variables.scss' as *;
+
 #app_footer {
     #footer_top {
         height: 370px;
@@ -174,31 +176,31 @@ export default {
 
             a {
                 text-decoration: none;
-                color: grey;
+                color: $linkFooter;
             }
 
             a:hover {
-                color: white;
+                color: $lighter;
             }
         }
     }
 
     #footer_bottom {
-        background-color: rgba(48, 48, 48, 1);
+        background-color: $secondary;
         height: 110px;
 
         .col {
             height: 110px;
 
             .my_btn {
-                border: 2px solid rgba(2, 130, 249, 1);
+                border: 2px solid $primary;
                 border-radius: 0;
                 color: white;
                 padding: 0.5rem;
             }
 
             p {
-                color: rgba(2, 130, 249, 1);
+                color: $primary;
             }
         }
     }

@@ -55,8 +55,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/variables.scss' as *;
+
 .banner_main {
-    background-color: rgba(2, 130, 249, 1);
+    background-color: $primary;
     height: 150px;
 
     img {
