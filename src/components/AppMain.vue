@@ -18,11 +18,15 @@ export default {
 </script>
 
 <template>
-    <main id="app_main" class=" debug">
+    <main id="app_main" class="text-white">
 
-        <div class="jumbotron"></div>
+        <div class="jumbotron mb-4"></div>
 
-        <div class="container px-3 py-5">
+        <div class="container px-3 py-5 position-relative">
+            <div id="current_series" class="position-absolute bg-primary p-3">
+                <h2 class="m-0">CURRENT SERIES</h2>
+            </div>
+
             <div class="row">
 
                 <div class="col-2" v-for="card in dataCards">
@@ -44,9 +48,13 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-main.debug {
+main {
     background-color: rgba(28, 28, 28, 1);
-    color: white;
+}
+
+#current_series {
+    top: -60px;
+    left: 0;
 }
 
 .jumbotron {
