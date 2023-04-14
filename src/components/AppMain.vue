@@ -23,17 +23,19 @@ export default {
         <div class="jumbotron"></div>
 
         <div class="container px-3 py-5">
-            <div class="container">
-                <div class="row">
+            <div class="row">
 
-                    <div class="col-2" v-for="card in dataCards">
-                        <CardImg :thumb="card.thumb" :series="card.series">
-                        </CardImg>
-                    </div>
-
+                <div class="col-2" v-for="card in dataCards">
+                    <CardImg :thumb="card.thumb" :series="card.series"></CardImg>
                 </div>
+
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-primary rounded-0 d-inline">LOAD MORE</button>
+                </div>
+
             </div>
         </div>
+        <!-- /cards -->
 
         <BannerMain></BannerMain>
         <!-- /.banner_main -->

@@ -2,13 +2,15 @@
 export default {
     props: {
         thumb: String,
-        series: String
+        price: String,
+        series: String,
+        type: String
     },
 }
 </script>
 
 <template>
-    <img class="img-fluid" :src="thumb" alt="">
+    <img class="img-fluid" :src="thumb" :alt="series">
 
     <p class="py-3">{{ series }}</p>
 </template>
