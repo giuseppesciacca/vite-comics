@@ -27,8 +27,8 @@ export default {
                 <div class="row">
 
                     <div class="col-2" v-for="card in dataCards">
-                        :thumb="card.thumb"
-                        :series="card.series"
+                        <CardImg :thumb="card.thumb" :series="card.series">
+                        </CardImg>
                     </div>
 
                 </div>
