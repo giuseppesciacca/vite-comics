@@ -40,7 +40,7 @@ export default {
         <div class="container">
             <div class="row text-white align-items-center px-5">
 
-                <div v-for="item in banner" class="col d-flex align-items-center">
+                <div v-for="item in banner" class="col-12 col-md-6 col-lg d-flex align-items-center py-3 p-lg-0">
                     <img class="img-fluid" :src="getImageUrl(item.src)" alt="">
                     <p class="ps-3 m-0">{{ item.text }} </p>
                 </div>
@@ -59,7 +59,7 @@ export default {
 
 .banner_main {
     background-color: $primary;
-    height: 150px;
+    min-height: 150px;
 
     img {
         height: 60px;

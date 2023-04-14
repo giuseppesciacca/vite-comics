@@ -158,7 +158,7 @@ export default {
 
 #app_footer {
     #footer_top {
-        height: 370px;
+        min-height: 370px;
         background-image: url(../assets/img/footer-bg.jpg);
 
         #logo_bg_main {
@@ -187,7 +187,7 @@ export default {
 
     #footer_bottom {
         background-color: $secondary;
-        height: 110px;
+        min-height: 110px;
 
         .col {
             height: 110px;

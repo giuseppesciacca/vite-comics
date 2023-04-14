@@ -32,7 +32,7 @@ export default {
 
             <div class="row">
 
-                <div class="col-2" v-for="card in dataCards">
+                <div class="col-6 col-md-4 col-lg-2" v-for="card in dataCards">
                     <CardImg :thumb="card.thumb" :series="card.series"></CardImg>
                 </div>
 
