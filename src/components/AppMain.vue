@@ -1,8 +1,17 @@
 <script>
+import dataCards from '../assets/data/dc-comics.json'
+import CardImg from './CardImg.vue';
 import BannerMain from './BannerMain.vue';
+
 export default {
     name: "AppMain",
+    data() {
+        return {
+            dataCards: dataCards,
+        }
+    },
     components: {
+        CardImg,
         BannerMain
     }
 }
@@ -14,7 +23,16 @@ export default {
         <div class="jumbotron"></div>
 
         <div class="container px-3 py-5">
-            <div>Content goes here</div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-2" v-for="card in dataCards">
+                        :thumb="card.thumb"
+                        :series="card.series"
+                    </div>
+
+                </div>
+            </div>
         </div>
 
         <BannerMain></BannerMain>

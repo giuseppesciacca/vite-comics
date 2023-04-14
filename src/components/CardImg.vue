@@ -2,20 +2,15 @@
 export default {
     props: {
         "thumb": string,
-        "price": string,
-        "series": string,
-        "type": string
+        "series": string
     },
-    data() {
-        return {}
-    }
 }
 </script>
 
 <template>
-    <div>
+    <img class="img-fluid" :src="thumb" alt="">
 
-    </div>
+    <p class="py-3">{{ series }}</p>
 </template>
 
 <style lang="scss" scoped></style>
